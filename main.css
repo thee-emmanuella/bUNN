@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Monument Extended;
+    src: url(./fonts/MonumentExtended-Ultrabold.otf);
+}
+
+body{
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    Padding-inline: 4rem;
+}
+section>div img{
+    width: 640px;
+    height: 640px;  
+}
+section{
+    display: flex;
+}
+section>div{
+    width: 55%;
+   display: flex;
+   justify-content: center;
+}
+.one{
+    /* align-items: center; */
+    gap: 3rem;
+    padding: 4rem;  
+background-color: #F5FFF3;
+}
+.one h1, .two header, .three header{
+    font-family: Monument Extended;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.one p{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.one article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+.two{
+    flex-direction: column;
+    gap: 2rem;
+}
+.two article{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    Padding-inline: 2rem;
+}
+.two div{
+    width: 50%;
+    padding: 6rem 4rem;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 20px;
+}
+.two button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 15px;
+    background-color: white;
+    margin-top: 2rem;
+  
+}
+#budv, #budv button{
+    color: #388E3C;
+    background-color: #F5FFF3;
+}
+#budv button{
+    border-radius: 10px;
+    border: 0.1px solid #388E3C;
+}
+#buds, #buds button{
+   color: #342662 ; 
+   background-color: #F5F2FF;
+}
+#buds button{
+    border-radius: 10px;
+    border: .1px solid #342662;
+}
+#bucs, #bucs button{
+    color: #5A4C1F;
+    background-color: #F9F6ED;
+}
+#bucs button{
+    border: .1px solid #5A4C1F;
+    border-radius: 10px;
+}
+.two header{
+    width: 50%;
+    padding-right: 5rem;
+}
+.three{
+    flex-direction: column;
+    gap: 2rem;
+}
+.three article{
+    display: flex;
+    gap: 2rem;
+}
+.three main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.three div{
+    background-image: url(./images/bg1.png);
+    padding: 2rem 2rem;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.three div h1{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 39px;
+}
+.three div p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.sold-out{
+    color:#31B219;
+    margin-top: 2rem;
+}
+.three header{
+    font-size: 28px;
+}
+hr{
+    width: 90px;
+    height: 5px;
+    background-color: #388E3C;
+}
+
+@media only screen and (max-width: 420px){
+    body{
+        width: 100%;
+        padding-inline: 0rem;
+    }
+  
+    section>div{
+        justify-content: center;
+        width: 100%;
+        opacity: .2;
+        position: absolute;
+        top: 3rem;
+        left: 0;
+    }
+    #logo{
+        width: 370px;
+        height: 370px; 
+    }
+    .one article{
+        width: 100%;
+        gap: 2.5rem;
+        justify-content: center;
+    }
+    .one{
+        gap: 3rem;
+        padding: 5rem 1rem;
+        background-color: #F5FFF3;
+        flex-direction: column;
+        position: relative;
+    }
+    .one h1{
+        font-size: 22px;
+        margin-top: -.7rem;
+    }
+    .one p, .three article p{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+    }
+    hr{
+        width: 50px;
+    }
+    .two{
+        flex-direction: column;
+    }
+    .two article{
+        flex-direction: column;
+        Padding-inline: 1rem;
+    }
+    .two header, .two div{
+        width: 100%;
+    }
+    .two header,.three header{
+        font-family: Monument Extended;
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    .two div{
+        padding: 3rem 2rem;
+    }
+    .two div h1, .three article h1{
+        font-size: 18px;
+    }
+    .two div button{
+        font-size: 14px;
+        padding: 7px 11px;
+    }
+    .three header{
+        font-size: 18px;
+        padding-inline: 1rem;
+    }
+    .three article{
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+
+
+}
