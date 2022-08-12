@@ -15,15 +15,16 @@ body{
     flex-direction: column;
     gap: 10rem;
     Padding-inline: 4rem;
+    overflow-x: hidden;
 }
 section>div img{
     width: 640px;
     height: 640px;  
 }
-section{
+.one{
     display: flex;
 }
-section>div{
+.one>div{
     width: 55%;
    display: flex;
    justify-content: center;
@@ -31,6 +32,7 @@ section>div{
 .one{
     /* align-items: center; */
     gap: 3rem;
+    margin-inline: -4rem;
     padding: 4rem;  
 background-color: #F5FFF3;
 }
@@ -117,6 +119,7 @@ background-color: #F5FFF3;
     padding-right: 5rem;
 }
 .three{
+    display: flex;
     flex-direction: column;
     gap: 2rem;
 }
@@ -161,10 +164,199 @@ hr{
     background-color: #388E3C;
 }
 
-@media only screen and (max-width: 627px){
+.testimonials,.team-section{
+    display: flex;
+    flex-direction: column;
+ }       
+ .team-section{
+    display: flex;
+    flex-direction: column;
+ }
+.testimonials main {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 28px;  
+    width: 100%;  
+}
+.testimonials h1{
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+}
+.card1, .card2 {
+    padding: 2rem;
+    box-shadow: 0px 0px 15px #fbf2f2;
+}
+.card1 {
+    background-color: white;
+}
+
+.card2 {
+    background-color: #f7fff9;
+}
+.testimonial-card p {
+    margin-bottom: 12px;
+}
+.testimonial-card h5 {
+    color: #388E3C;
+    padding-top: 2rem;
+}
+
+.team-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+ }      
+ .team-section header {
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+ }
+ .team-section main{
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+ }
+ .team-section main article{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+ }
+ .team-section main article div{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: space-around;
+ }
+.cofoundersImages{
+    width: 350px;
+}
+.others{
+    width: 60px;
+    border-radius: 50%;
+}
+.team-section h5{
+    font-size: 22px;
+}
+.otherTeam ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+}
+.community {
+    background: linear-gradient(to right, rgba(215, 247, 227, 1), rgba(215, 247, 227, 0), rgba(215, 247, 227, 1));
+    padding-inline: 2rem;   
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: -3rem;
+    padding: 5rem 4rem;
+    margin-inline: -4rem;
+}
+.community header{
+    width: 100%;
+}
+.community h1 {
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+}
+.community-breakdown {
+    display: flex;
+    width: 100%;
+   justify-content: space-around;
+}
+.community-breakdown li {
+    list-style: none;
+}
+.community-breakdown h4 {
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 64px;
+    color: #2E7D32;
+}
+
+.community-breakdown p {
+    font-family: 'Montserrat', sans-serif;
+}
+footer {
+    margin-inline: -4rem;
+    margin-top: -7rem;
+    padding: 2rem 4rem;
+    background-color: #000000;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    /* margin-right: 18rem; */
+    height: 100px;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    
+}
+
+.footer-container p {
+    padding: 0rem 2rem 2rem;
+}
+
+.footer-container a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-container a:hover {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer hr {
+    border-style: none;
+    height: 0.5px;
+    background-color: rgb(162, 159, 159);
+    opacity: 0.3;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+}
+
+
+@media only screen and (max-width: 760px){
     body{
         width: 100%;
-        padding-inline: 0rem;
+        padding-inline: 1rem;
     }
   
     section>div{
@@ -173,7 +365,7 @@ hr{
         opacity: .2;
         position: absolute;
         top: 3rem;
-        left: 0;
+        left: 6rem;
     }
     #logo{
         width: 370px;
@@ -190,6 +382,7 @@ hr{
         background-color: #F5FFF3;
         flex-direction: column;
         position: relative;
+        margin-inline: 0;
     }
     .one h1{
         font-size: 22px;
@@ -230,16 +423,115 @@ hr{
         font-size: 14px;
         padding: 7px 11px;
     }
+    .three{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .three header{
         font-size: 18px;
-        padding-inline: 1rem;
     }
     .three article{
         flex-direction: column;
         padding-inline: 1rem;
     }
+    .three hr{
+        transform: translateY(-1rem);
+    }
+    .testimonials main{
+        flex-direction: column;
+    }
+    .testimonials>div{
+        flex-direction: column;
+    }
+    .team-section header{
+        font-size: 16px;
+    }
+    .testimonials{
+        padding: 1rem;
+    }
+    .testimonials h1{
+        font-size: 22px;
+    }
+    .card1, .card2 {
+        padding: 1.5rem 1rem;
+        box-shadow: 0px 0px 15px #fbf2f2;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .team-section{
+        padding: 0 1rem;
+    }
+    .team-section main{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 6rem;
+     }
+     .main2{
+        margin-top: 3rem;
+     }
+     .team-section main article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+     }
+     .cofoundersImages{
+        width: 450px;
+    }
+    .others{
+        width: 60px;
+        border-radius: 50%;
+    }
+    .team-section h5{
+        font-size: 22px;
+    }
+    .otherTeam ul{
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .community{
+        margin-inline: 0rem;
+    }
+    .community header h1{
+        font-size: 28px;
+    }
+    .community-breakdown {
+        flex-direction: column;
+        gap: 2rem;
+     }
+     .community-breakdown li {
+         width: 100%;
+     }
+     .community-breakdown h4 {
+        font-family: 'Monument Extended', sans-serif;
+        font-size: 32px;
+        color: #2E7D32;
+    }
+    footer{
+        margin-inline: 0rem;
+    }
+    .footer-div {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+    .footer hr{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
 }
 @media only screen and (max-width:1400px){
+    .community-breakdown {
+        flex-direction: column;
+     }
     body{
         padding-inline: 0rem;
     }
@@ -279,7 +571,7 @@ hr{
     }
 }
 
-@media (max-width:962px) and (min-width:626px){
+@media (max-width:962px) and (min-width:760px){
     .three main{
         flex-direction: row;
     }
