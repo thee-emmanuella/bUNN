@@ -17,8 +17,8 @@ body{
     Padding-inline: 4rem;
     overflow-x: hidden;
 }
-section>div img{
-    width: 640px;
+.one>div img{
+    width: 90%;
     height: 640px;  
 }
 .one{
@@ -236,7 +236,10 @@ hr{
     justify-content: space-around;
  }
 .cofoundersImages{
-    width: 350px;
+    width: 50%;
+}
+.main2 ,.cofoundersImages{
+    height: 380px;
 }
 .others{
     width: 60px;
@@ -292,22 +295,21 @@ hr{
 footer {
     margin-inline: -4rem;
     margin-top: -7rem;
-    padding: 2rem 4rem;
+    padding: 0rem 4rem;
     background-color: #000000;
 }
 
 .logo {
-    width: 300px;
-    height: 300px;
+    width: 350px;
     /* margin-right: 18rem; */
-    height: 100px;
+    height: 350px;
 }
 
 .footer-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .footer-container {
@@ -318,6 +320,7 @@ footer {
 .footer-container p {
     padding: 0rem 2rem 2rem;
 }
+
 
 .footer-container a {
     font-family: 'Montserrat', sans-serif;
@@ -359,18 +362,21 @@ footer hr {
         padding-inline: 1rem;
     }
   
-    section>div{
+    /* .one>div{
+      
+    } */
+    .one>div img{
         justify-content: center;
-        width: 100%;
+        max-width: 100%;
         opacity: .2;
         position: absolute;
-        top: 3rem;
-        left: 6rem;
+        top: 0rem;
+        left: 0rem;
+        bottom: 0rem;
+        right: 0rem;
+        margin: auto;
     }
-    #logo{
-        width: 370px;
-        height: 370px; 
-    }
+ 
     .one article{
         width: 100%;
         gap: 2.5rem;
@@ -415,6 +421,10 @@ footer hr {
     }
     .two div{
         padding: 3rem 2rem;
+        margin-bottom: 1rem;
+    }
+    #bucs{
+        margin-top: -1rem;
     }
     .two div h1, .three article h1{
         font-size: 18px;
@@ -427,12 +437,13 @@ footer hr {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    .three header{
+    .three header h1{
         font-size: 18px;
     }
     .three article{
         flex-direction: column;
-        padding-inline: 1rem;
+        padding-inline: 0rem;
+        width: 100%;
     }
     .three hr{
         transform: translateY(-1rem);
@@ -443,14 +454,18 @@ footer hr {
     .testimonials>div{
         flex-direction: column;
     }
-    .team-section header{
-        font-size: 16px;
+    .team-section header h1{
+        font-size: 22px;
+        line-height: 26.4px;
+       
     }
     .testimonials{
         padding: 1rem;
     }
     .testimonials h1{
         font-size: 22px;
+        line-height: 26.4px;
+        margin-top: 0px;
     }
     .card1, .card2 {
         padding: 1.5rem 1rem;
@@ -460,6 +475,7 @@ footer hr {
     }
     .team-section{
         padding: 0 1rem;
+        margin-bottom: 13rem;
     }
     .team-section main{
         display: flex;
@@ -476,9 +492,10 @@ footer hr {
         align-items: center;
         gap: 1rem;
         width: 100%;
+        text-align: center;
      }
      .cofoundersImages{
-        width: 450px;
+        width: 90%;
     }
     .others{
         width: 60px;
@@ -494,6 +511,7 @@ footer hr {
     }
     .community{
         margin-inline: 0rem;
+        margin-top: 0;
     }
     .community header h1{
         font-size: 28px;
@@ -512,6 +530,7 @@ footer hr {
     }
     footer{
         margin-inline: 0rem;
+        text-align: center;
     }
     .footer-div {
         flex-direction: column;
@@ -526,7 +545,10 @@ footer hr {
         width: 100%;
         align-items: center;
     }
-
+    .logo{
+        margin-top: -6rem;
+        margin-bottom: -8rem;
+    }
 }
 @media only screen and (max-width:1400px){
     .community-breakdown {
@@ -571,27 +593,31 @@ footer hr {
     }
 }
 
-@media (max-width:962px) and (min-width:760px){
+@media (max-width:1140px) and (min-width:760px){
     .three main{
         flex-direction: row;
     }
     .three article{
         flex-direction: column;
     }
-    section>div{
+    .one>div{
         justify-content: center;
         width: 100%;
         opacity: .2;
         position: absolute;
-        top: 3rem;
+        top: 0rem;
         left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
     }
     #logo{
-        width: 370px;
-        height: 370px; 
+       
+        height: 400px; 
     }
     .one article{
         width: 100%;
+        padding-inline: 1rem;
     }
     .one article>div{
         margin-bottom: 2rem;
@@ -606,13 +632,23 @@ footer hr {
     .two header, .two div{
         width: 100%;
     }
-    .two header,.three header{
+    .two header,.three header,.testimonials h1,.team-section header h1{
         font-family: Monument Extended;
         font-size: 22px;
         line-height: 26.4px;
     }
+    .testimonials{
+        padding-inline: 1rem;
+    }
+    .testimonial-card{
+        flex-direction: column;
+    } 
     .two div{
         padding: 3rem 2rem;
+        margin-bottom: 1rem;
+    }
+    #bucs{
+        margin-top: -1rem;
     }
     .two div h1, .three article h1{
         font-size: 18px;
@@ -620,5 +656,63 @@ footer hr {
     .two div button{
         font-size: 14px;
         padding: 7px 11px;
+    }
+    .team-section{
+        padding-inline: 1rem;
+    }
+   .team-section .main1,.team-section .main2{
+    flex-direction: column;
+   }
+   .team-section .main2 .otherTeam::before{
+    content: 'Other Team members';
+   }
+   .team-section .main2 .otherTeam{
+    justify-content: center;
+   }
+   .team-section .main1 article,.team-section .main2 article{
+    width: 100%;
+   }
+   .community{
+    margin-inline: 0rem;
+    padding-inline: 1rem;
+    width: 100%;
+
+    }
+    .community header h1{
+        font-size: 28px;
+        line-height: 26px;
+    }
+    .community-breakdown {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .community-breakdown li {
+        width: 100%;
+    }
+    .community-breakdown h4 {
+        font-family: 'Monument Extended', sans-serif;
+        font-size: 39px;
+        color: #2E7D32;
+    }
+    footer{
+        margin-inline: 0rem;
+        text-align: center;
+    }
+    .footer-div {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+    .footer hr{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .logo{
+        margin-top: -6rem;
+        margin-bottom: -8rem;
     }
 }
