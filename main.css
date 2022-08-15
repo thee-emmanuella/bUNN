@@ -237,6 +237,7 @@ hr{
  }
 .cofoundersImages{
     width: 50%;
+    border-radius: 20px;
 }
 .main2 ,.cofoundersImages{
     height: 380px;
