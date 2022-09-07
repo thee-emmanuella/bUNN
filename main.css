@@ -398,6 +398,9 @@ footer hr {
         width: 100%;
         padding-inline: 1rem;
     }
+    .header {
+        font-size: 34px;
+    }
     .one>div img{
         justify-content: center;
         max-width: 100%;
@@ -424,7 +427,6 @@ footer hr {
         margin-inline: 0;
     }
     .one h1{
-        font-size: 22px;
         margin-top: -.7rem;
     }
     .one p, .three article p{
