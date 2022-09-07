@@ -439,6 +439,9 @@ footer hr {
         line-height: 25px;
         letter-spacing: 0em;
     }
+    .one .header:last-of-type {
+        font-size: 33px;
+    }
     hr{
         width: 50px;
     }
