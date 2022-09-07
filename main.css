@@ -252,7 +252,6 @@ hr{
 
 .sm-links a:hover {
     font-size: 20px;
-    /* color: #1355f0; */
     color: #388E3C;
 }
 .cofoundersImages{
@@ -379,6 +378,7 @@ footer hr {
     height: 0.5px;
     background-color: rgb(162, 159, 159);
     opacity: 0.3;
+    width: 100%;
 }
 .copyright {
     display: flex;
@@ -400,6 +400,9 @@ footer hr {
     }
     .header {
         font-size: 34px;
+    }
+    .three .header, .testimonials .header, .team-section .header, .community .header {
+        font-size: 32px;
     }
     .one>div img{
         justify-content: center;
@@ -546,6 +549,7 @@ footer hr {
     .community{
         margin-inline: 0rem;
         margin-top: 5rem;
+        padding-inline: 1rem;
     }
     .community header {
         font-size: 22px;
@@ -594,6 +598,9 @@ footer hr {
         width: 100%;
         text-align: center;
      }
+     .three .header, .testimonials .header, .team-section .header, .community .header {
+        font-size: 32px;
+    }
      .cofoundersImages{
         width: 100%;
         border-radius: 16px 16px 0 0;
@@ -619,7 +626,10 @@ footer hr {
         left: 0.5rem;
     }
     .community {
-        margin-top: 9rem;
+        margin-top: 10rem;
+    }
+    footer hr {
+        width: 100%;
     }
 }
 
@@ -673,6 +683,9 @@ footer hr {
     .community-breakdown {
         gap: 2rem;
     }
+    footer hr {
+        width: 100%;
+    }
 }
 
 @media (max-width:1140px) and (min-width:760px){
@@ -694,7 +707,6 @@ footer hr {
         margin: auto;
     }
     #logo{
-       
         height: 400px; 
     }
     .one article{
